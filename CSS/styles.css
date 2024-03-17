@@ -1,0 +1,190 @@
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img, svg, video {
+    display: block;
+    width: 100%
+}
+
+
+
+body {
+    color: var(--wenge-brown);
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+}
+
+article {
+    background-color: var(--white);
+    
+}
+
+section {
+    padding: 1em 0em 1em;
+    margin-inline: 2em;
+}
+
+#food-image {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 1.5em;
+    text-align: left;
+}
+
+span {
+    font-weight: 600;
+}
+
+h1 {
+    color: var(--dark-charcoal);
+    font-family: 'Young Serif', serif;
+    font-size: 1.7em;
+    font-weight: 400;
+    padding: 1em 0em;
+}
+
+h2 {
+    color: var(--nutmeg);
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    padding: 1em 0em;
+}
+
+ul, ol {
+    line-height: 1.5em; 
+    margin-left: 1.5em;
+}
+
+li::marker {
+    color: var(--dark-raspberry);
+    font-weight: 600;
+}
+
+
+ul li, ol li {
+    padding: .25em;
+}
+
+ul li {
+    padding-left: 1em;
+    padding-block: auto;
+}
+
+#introduction p {
+    padding-bottom: 2em;
+    width: 100%;
+}
+
+#preperation {
+    background-color: var(--rose-white);
+}
+
+#preperation h2 {
+    color: var(--dark-raspberry);
+    font-family: 'Outfit', sans-serif;
+    padding: 1em 1em 0em;
+}
+
+#preperation ul {
+    padding-inline: 2em;
+}
+
+#instructions {
+    border-top: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 1em;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid var(--light-grey);
+    margin: 3em;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    text-align: left;
+    padding: 1.25em;
+}
+
+td:last-child {
+    color: var(--nutmeg);
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        background-color: var(--eggshell);
+        display: grid;
+        grid-template-columns: repeat(6, 1fr)
+    }
+
+    img {
+        border-radius: 10px;
+        margin-top: 1em;
+    }
+
+    article, header {
+        background-color: var(--white);
+    }
+
+    article {
+        border-radius: 10px;
+        margin-block: 8em;
+
+        grid-column: 2/6;
+    }
+
+    section {
+        margin-inline: 2em;
+    }
+
+    #food-image {
+        padding: 1em 0em 1em;
+        margin-inline: 2em;
+    }
+
+    #preperation {
+        border-radius: 10px;
+        margin: 0;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1080px) {
+    
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h1, h2 {
+        padding: 0;
+    }
+}
